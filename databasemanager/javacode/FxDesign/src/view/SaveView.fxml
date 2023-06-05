@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="SaveView" prefHeight="594.0" prefWidth="450.0" style="-fx-background-image: url(img/StudentSave.png); -fx-background-size: 100%,100%;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SaveView">
+   <children>
+      <Label layoutX="144.0" layoutY="27.0" text="学生添加">
+         <font>
+            <Font size="40.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.7669902912621359" endY="0.6990291262135923" startX="0.766990291262136" startY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#008c8c" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Button fx:id="okButton" layoutX="175.0" layoutY="529.0" mnemonicParsing="false" onAction="#ok" prefHeight="51.0" prefWidth="128.0" text="添加">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Label layoutX="44.0" layoutY="157.0" prefHeight="39.0" prefWidth="93.0" text="姓名：">
+         <font>
+            <Font size="30.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.7669902912621359" endY="0.6990291262135923" startX="0.766990291262136" startY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#008c8c" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="44.0" layoutY="222.0" text="性别：">
+         <font>
+            <Font size="30.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.7669902912621359" endY="0.6990291262135923" startX="0.766990291262136" startY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#008c8c" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="44.0" layoutY="295.0" text="班级：">
+         <font>
+            <Font size="30.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.7669902912621359" endY="0.6990291262135923" startX="0.766990291262136" startY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#008c8c" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="44.0" layoutY="366.0" text="学号：">
+         <font>
+            <Font size="30.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.7669902912621359" endY="0.6990291262135923" startX="0.766990291262136" startY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#008c8c" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="44.0" layoutY="441.0" text="密码：">
+         <font>
+            <Font size="30.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.7669902912621359" endY="0.6990291262135923" startX="0.766990291262136" startY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#008c8c" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <RadioButton id="2" fx:id="man" layoutX="163.0" layoutY="228.0" mnemonicParsing="false" onMouseClicked="#getMan" text="男生">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="gender" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton id="3" fx:id="woman" layoutX="299.0" layoutY="228.0" mnemonicParsing="false" onMouseClicked="#getWoman" text="女生" toggleGroup="$gender">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </RadioButton>
+      <Separator layoutX="2.0" layoutY="115.0" prefHeight="14.0" prefWidth="444.0" />
+      <TextField id="1" fx:id="nameField" alignment="CENTER" layoutX="148.0" layoutY="151.0" prefHeight="51.0" prefWidth="273.0" promptText="请输入姓名" style="-fx-background-radius: 25;">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <TextField id="4" fx:id="classRoomField" alignment="CENTER" layoutX="148.0" layoutY="289.0" prefHeight="51.0" prefWidth="273.0" promptText="请输入班级" style="-fx-background-radius: 20;">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <TextField id="5" fx:id="numberField" alignment="CENTER" layoutX="148.0" layoutY="366.0" prefHeight="51.0" prefWidth="273.0" promptText="请输入学号" style="-fx-background-radius: 20;">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <TextField id="6" fx:id="passwordField" alignment="CENTER" layoutX="148.0" layoutY="435.0" prefHeight="51.0" prefWidth="273.0" promptText="请输入密码" style="-fx-background-radius: 20;">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

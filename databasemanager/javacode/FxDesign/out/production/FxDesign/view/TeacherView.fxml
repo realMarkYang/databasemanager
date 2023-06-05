@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="TeacherView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="533.0" prefWidth="856.0" style="-fx-background-image: url(img/TeacherView.JPG); -fx-background-size: 100%,100%;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TeacherView">
+   <children>
+      <Label layoutX="145.0" layoutY="142.0" prefHeight="39.0" prefWidth="123.0" text="监考老师">
+         <font>
+            <Font name="System Bold Italic" size="30.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.5631067961165048" startY="0.7864077669902912">
+               <stops>
+                  <Stop color="#108f67" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="332.0" layoutY="28.0" text="教师信息">
+         <font>
+            <Font name="System Bold Italic" size="45.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.5631067961165048" startY="0.7864077669902912">
+               <stops>
+                  <Stop color="#108f67" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="145.0" layoutY="238.0" prefHeight="39.0" prefWidth="123.0" text="监考教室">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.5631067961165048" startY="0.7864077669902912">
+               <stops>
+                  <Stop color="#108f67" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="164.0" layoutY="321.0" text="科目">
+         <font>
+            <Font name="System Bold Italic" size="30.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.5631067961165048" startY="0.7864077669902912">
+               <stops>
+                  <Stop color="#108f67" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="164.0" layoutY="397.0" text="时间">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.5631067961165048" startY="0.7864077669902912">
+               <stops>
+                  <Stop color="#108f67" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <TextField fx:id="name" alignment="CENTER" editable="false" layoutX="359.0" layoutY="138.0" prefHeight="48.0" prefWidth="224.0" promptText="姓名">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></TextField>
+      <TextField fx:id="room" alignment="CENTER" editable="false" layoutX="359.0" layoutY="234.0" prefHeight="48.0" prefWidth="224.0" promptText="教室">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font></TextField>
+      <TextField fx:id="object" alignment="CENTER" editable="false" layoutX="359.0" layoutY="321.0" prefHeight="48.0" prefWidth="224.0" promptText="学科">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></TextField>
+      <TextField alignment="CENTER" editable="false" layoutX="359.0" layoutY="403.0" prefHeight="48.0" prefWidth="224.0" text="90分钟">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></TextField>
+      <Separator layoutX="121.0" layoutY="195.0" prefHeight="4.0" prefWidth="615.0" />
+      <Separator layoutX="117.0" layoutY="126.0" orientation="VERTICAL" prefHeight="71.0" prefWidth="14.0" />
+      <Separator layoutX="119.0" layoutY="123.0" prefHeight="4.0" prefWidth="615.0" />
+      <Separator layoutX="725.0" layoutY="125.0" orientation="VERTICAL" prefHeight="71.0" prefWidth="20.0" />
+      <Separator layoutX="120.0" layoutY="216.0" prefHeight="4.0" prefWidth="615.0" />
+      <Separator layoutX="113.0" layoutY="296.0" prefHeight="4.0" prefWidth="623.0" />
+      <Separator layoutX="121.0" layoutY="310.0" prefHeight="4.0" prefWidth="608.0" />
+      <Separator layoutX="124.0" layoutY="378.0" prefHeight="4.0" prefWidth="608.0" />
+      <Separator layoutX="118.0" layoutY="389.0" prefHeight="10.0" prefWidth="615.0" />
+      <Separator layoutX="118.0" layoutY="458.0" prefHeight="4.0" prefWidth="615.0" />
+      <Separator layoutX="114.0" layoutY="215.0" orientation="VERTICAL" prefHeight="85.0" prefWidth="14.0" />
+      <Separator layoutX="733.0" layoutY="220.0" orientation="VERTICAL" prefHeight="78.0" prefWidth="6.0" />
+      <Separator layoutX="118.0" layoutY="311.0" orientation="VERTICAL" prefHeight="71.0" prefWidth="0.0" />
+      <Separator layoutX="728.0" layoutY="310.0" orientation="VERTICAL" prefHeight="71.0" prefWidth="14.0" />
+      <Separator layoutX="109.0" layoutY="395.0" orientation="VERTICAL" prefHeight="64.0" prefWidth="20.0" />
+      <Separator layoutX="729.0" layoutY="392.0" orientation="VERTICAL" prefHeight="64.0" prefWidth="6.0" />
+      <Button fx:id="okButton" layoutX="359.0" layoutY="471.0" mnemonicParsing="false" onAction="#okButton" prefHeight="48.0" prefWidth="102.0" text="确定">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.5631067961165048" startY="0.7864077669902912">
+               <stops>
+                  <Stop color="#108f67" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="764.0" prefWidth="1190.0" style="-fx-background-image: url(img/Exam.jpg); -fx-background-size: 100%,100%;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StudentExam">
+   <children>
+      <TextArea fx:id="content" editable="false" layoutX="24.0" layoutY="112.0" prefHeight="540.0" prefWidth="829.0" wrapText="true">
+         <effect>
+            <InnerShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </TextArea>
+      <ImageView fitHeight="59.0" fitWidth="80.0" layoutX="14.0" layoutY="8.0" style="-fx-image: url(img/first.png);">
+         <image>
+            <Image url="@../img/first.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="27.0" fitWidth="174.0" layoutX="81.0" layoutY="24.0" style="-fx-image: url(img/second.png);">
+         <image>
+            <Image url="@../img/second.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="teacherName" alignment="CENTER" editable="false" layoutX="971.0" layoutY="146.0" prefHeight="39.0" prefWidth="189.0" promptText="教师名">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></TextField>
+      <TextField fx:id="teacherPhone" alignment="CENTER" editable="false" layoutX="971.0" layoutY="231.0" prefHeight="39.0" prefWidth="189.0" promptText="联系电话">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></TextField>
+      <TextField fx:id="time" alignment="CENTER" editable="false" layoutX="971.0" layoutY="315.0" prefHeight="39.0" prefWidth="189.0" promptText="考试时间" text="90分钟">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font></TextField>
+      <Label layoutX="885.0" layoutY="152.0" text="监考老师">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="885.0" layoutY="237.0" text="联系电话">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="885.0" layoutY="321.0" text="考试时间">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="A" layoutX="68.0" layoutY="609.0" mnemonicParsing="false" onMouseClicked="#ChooseA" text="A">
+         <toggleGroup>
+            <ToggleGroup fx:id="choose" />
+         </toggleGroup>
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="B" layoutX="312.0" layoutY="609.0" mnemonicParsing="false" onMouseClicked="#ChooseB" text="B" toggleGroup="$choose">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="C" layoutX="545.0" layoutY="609.0" mnemonicParsing="false" onMouseClicked="#ChooseC" text="C" toggleGroup="$choose">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="D" layoutX="798.0" layoutY="609.0" mnemonicParsing="false" onMouseClicked="#ChooseD" text="D" toggleGroup="$choose">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </RadioButton>
+      <Button fx:id="last" layoutX="168.0" layoutY="688.0" mnemonicParsing="false" onAction="#lastButton" prefHeight="41.0" prefWidth="100.0" text="刷新">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font></Button>
+      <Button fx:id="okButton" layoutX="404.0" layoutY="687.0" mnemonicParsing="false" onAction="#okButton" prefHeight="39.0" prefWidth="69.0" text="交卷">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font></Button>
+      <Button fx:id="next" layoutX="660.0" layoutY="688.0" mnemonicParsing="false" onAction="#nextButton" prefHeight="41.0" prefWidth="100.0" text="下一题">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Button>
+      <Label layoutX="885.0" layoutY="491.0" prefHeight="27.0" prefWidth="80.0" text="学生姓名">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="885.0" layoutY="572.0" prefHeight="27.0" prefWidth="80.0" text="学生班级">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="studentName" alignment="CENTER" editable="false" layoutX="971.0" layoutY="485.0" prefHeight="39.0" prefWidth="189.0" promptText="学生姓名">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="studentClassRoom" alignment="CENTER" editable="false" layoutX="971.0" layoutY="566.0" prefHeight="39.0" prefWidth="189.0" promptText="学生班级">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="studentNumber" alignment="CENTER" editable="false" layoutX="971.0" layoutY="402.0" prefHeight="39.0" prefWidth="189.0" promptText="学生学号">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </TextField>
+      <Label layoutX="885.0" layoutY="408.0" prefHeight="27.0" prefWidth="80.0" text="学生学号">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Title" alignment="CENTER" editable="false" layoutX="302.0" layoutY="51.0" prefHeight="59.0" prefWidth="371.0" text="（考试名称放置处）">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

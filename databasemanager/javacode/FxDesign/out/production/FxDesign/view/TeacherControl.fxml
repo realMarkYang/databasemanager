@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="StudentControler" fx:id="Teacher" prefHeight="787.0" prefWidth="1544.0" style="-fx-background-image: url(img/teacher.jpg); -fx-background-size: 100%,100%;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TeacherControl">
+    <children>
+        <Label layoutX="419.0" layoutY="44.0" prefHeight="64.0" prefWidth="511.0" text="管 理 系 统 总 控 制 台">
+            <font>
+                <Font size="50.0" />
+            </font>
+            <textFill>
+                <LinearGradient endX="0.49029126213592233" endY="1.0" startX="0.49029126213592233" startY="0.3155339805825243">
+                    <stops>
+                        <Stop color="#f22222" />
+                        <Stop color="#f0a522" offset="1.0" />
+                    </stops>
+                </LinearGradient>
+            </textFill>
+        </Label>
+        <SplitPane dividerPositions="0.11961367013372957" layoutX="1.0" layoutY="148.0" prefHeight="639.0" prefWidth="1542.0">
+            <items>
+                <AnchorPane focusTraversable="true" minHeight="0.0" minWidth="0.0" prefHeight="568.0" prefWidth="218.0">
+                    <children>
+                        <Button id="question" fx:id="question" layoutX="43.0" layoutY="488.0" mnemonicParsing="false" onMouseClicked="#questionClicked" style="-fx-background-radius: 30;" text="题库管理">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                            <textFill>
+                                <LinearGradient endX="0.49029126213592233" endY="1.0" startX="0.49029126213592233" startY="0.3155339805825243">
+                                    <stops>
+                                        <Stop color="#f22222" />
+                                        <Stop color="#f0a522" offset="1.0" />
+                                    </stops>
+                                </LinearGradient>
+                            </textFill>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </Button>
+                        <Button id="teacher" fx:id="teacher" layoutX="37.0" layoutY="298.0" mnemonicParsing="false" onMouseClicked="#teacherClicked" style="-fx-background-radius: 30;" text="教师管理">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                            <textFill>
+                                <LinearGradient endX="0.49029126213592233" endY="1.0" startX="0.49029126213592233" startY="0.3155339805825243">
+                                    <stops>
+                                        <Stop color="#f22222" />
+                                        <Stop color="#f0a522" offset="1.0" />
+                                    </stops>
+                                </LinearGradient>
+                            </textFill>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </Button>
+                        <Button id="student" fx:id="student" layoutX="36.0" layoutY="119.0" mnemonicParsing="false" onMouseClicked="#studentClicked" style="-fx-background-radius: 30;" text="学生管理">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                            <textFill>
+                                <LinearGradient endX="0.49029126213592233" endY="1.0" startX="0.49029126213592233" startY="0.3155339805825243">
+                                    <stops>
+                                        <Stop color="#f22222" />
+                                        <Stop color="#f0a522" offset="1.0" />
+                                    </stops>
+                                </LinearGradient>
+                            </textFill>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </Button>
+                    </children>
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="568.0" prefWidth="1206.0">
+                    <children>
+                        <Button id="save" fx:id="save" layoutX="27.0" layoutY="23.0" mnemonicParsing="false" onMouseClicked="#saveClicked" style="-fx-background-radius: 10;" text="添加">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                            <textFill>
+                                <LinearGradient endX="0.49029126213592233" endY="1.0" startX="0.49029126213592233" startY="0.3155339805825243">
+                                    <stops>
+                                        <Stop color="#f22222" />
+                                        <Stop color="#f0a522" offset="1.0" />
+                                    </stops>
+                                </LinearGradient>
+                            </textFill>
+                        </Button>
+                        <TableView fx:id="table" editable="true" layoutX="14.0" layoutY="84.0" opacity="0.9" prefHeight="533.0" prefWidth="1318.0" tableMenuButtonVisible="true">
+                            <columns>
+                                <TableColumn fx:id="numberClo" prefWidth="195.0" text="职工号" />
+                                <TableColumn fx:id="nameClo" prefWidth="166.0" text="姓名" />
+                                <TableColumn fx:id="genderClo" minWidth="0.0" prefWidth="83.66668701171875" text="性别" />
+                        <TableColumn fx:id="phoneClo" prefWidth="173.6666259765625" text="电话" />
+                        <TableColumn fx:id="taskClo" prefWidth="627.3333740234375" text="监考任务" />
+                        <TableColumn fx:id="deleteButtonClo" prefWidth="72.6666259765625" text="删除" />
+                            </columns>
+                            <effect>
+                                <SepiaTone />
+                            </effect>
+                        </TableView>
+                        <TextField fx:id="search" alignment="CENTER" layoutX="867.0" layoutY="22.0" prefHeight="41.0" prefWidth="386.0" promptText="请输入要查询的信息(职工号或者姓名)" style="-fx-background-radius: 20;">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                        </TextField>
+                        <Button id="query" fx:id="query" layoutX="794.0" layoutY="22.0" mnemonicParsing="false" onMouseClicked="#queryClicked" style="-fx-background-radius: 10;" text="查询">
+                            <textFill>
+                                <LinearGradient endX="0.49029126213592233" endY="1.0" startX="0.49029126213592233" startY="0.3155339805825243">
+                                    <stops>
+                                        <Stop color="#f22222" />
+                                        <Stop color="#f0a522" offset="1.0" />
+                                    </stops>
+                                </LinearGradient>
+                            </textFill>
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </Button>
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+        <Label layoutX="1026.0" layoutY="84.0" prefHeight="48.0" prefWidth="179.0" text="—  教师界面">
+            <font>
+                <Font size="30.0" />
+            </font>
+            <textFill>
+                <LinearGradient endX="0.49029126213592233" endY="1.0" startX="0.49029126213592233" startY="0.3155339805825243">
+                    <stops>
+                        <Stop color="#f22222" />
+                        <Stop color="#f0a522" offset="1.0" />
+                    </stops>
+                </LinearGradient>
+            </textFill>
+        </Label>
+      <ImageView fitHeight="81.0" fitWidth="102.0" layoutX="14.0" layoutY="22.0" style="-fx-image: url(img/first.png);">
+         <image>
+            <Image url="@../img/first.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="39.0" fitWidth="200.0" layoutX="102.0" layoutY="43.0" style="-fx-image: url(img/scond.png);">
+         <image>
+            <Image url="@../img/second.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

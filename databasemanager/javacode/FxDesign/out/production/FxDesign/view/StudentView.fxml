@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="StudentView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="902.0" prefWidth="1299.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StudentView">
+   <children>
+      <ImageView disable="true" fitHeight="876.0" fitWidth="1299.0" layoutY="5.0" style="-fx-image: url(img/StudentView.jpg);">
+         <image>
+         </image>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </ImageView>
+      <TextField disable="true" editable="false" layoutX="36.0" layoutY="84.0" prefHeight="50.0" prefWidth="350.0" text="欢迎使用安徽理工大学题库管理系统">
+         <font>
+            <Font size="20.0" />
+         </font></TextField>
+      <TextArea layoutX="552.0" layoutY="134.0" prefHeight="128.0" prefWidth="219.0" />
+      <TextArea layoutX="292.0" layoutY="134.0" prefHeight="128.0" prefWidth="219.0" />
+      <Button fx:id="ChineseButton" layoutX="80.0" layoutY="360.0" mnemonicParsing="false" onAction="#ChineseButton" prefHeight="41.0" prefWidth="132.0" text="点击进入" wrapText="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="EnglishButton" layoutX="596.0" layoutY="358.0" mnemonicParsing="false" onAction="#EnglishButton" prefHeight="41.0" prefWidth="132.0" text="点击进入">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="MathButton" layoutX="334.0" layoutY="358.0" mnemonicParsing="false" onAction="#MathButton" prefHeight="41.0" prefWidth="132.0" text="点击进入">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <TextArea fx:id="ChineseText" editable="false" layoutX="36.0" layoutY="262.0" prefHeight="98.0" prefWidth="219.0" text="科目：语文&#10;班级：19级移动三班、四班&#10;时间：6月20日上午&#10;地点：14#201、14#203&#10;">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect></TextArea>
+      <TextArea fx:id="EnglishText" editable="false" layoutX="552.0" layoutY="260.0" prefHeight="98.0" prefWidth="219.0" text="科目：英语&#10;班级：19级移动三班,四班&#10;时间：6月20日晚上&#10;地点：14#301、14#303&#10;">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect></TextArea>
+      <TextArea fx:id="MathText" editable="false" layoutX="292.0" layoutY="262.0" prefHeight="98.0" prefWidth="219.0" text="科目：数学&#10;班级：19级移动三班,四班&#10;时间：6月20日下午&#10;地点：14#201、14#203&#10;">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect></TextArea>
+      <TextArea layoutX="36.0" layoutY="134.0" prefHeight="128.0" prefWidth="219.0" />
+      <ImageView fitHeight="128.0" fitWidth="219.0" layoutX="36.0" layoutY="134.0" style="-fx-image: url(img/Chinese.png);">
+         <image>
+
+         </image>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="128.0" fitWidth="219.0" layoutX="552.0" layoutY="134.0" style="-fx-image: url(img/english.png);">
+         <image>
+
+         </image>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="128.0" fitWidth="219.0" layoutX="292.0" layoutY="134.0" style="-fx-image: url(img/math.png);">
+         <image>
+
+         </image>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </ImageView>
+      <TextField disable="true" editable="false" layoutX="36.0" layoutY="803.0" prefHeight="41.0" prefWidth="872.0" text="注意：请各位同学仔细阅读“考试须知”，了解考试安排及要求，有任何问题请联系老师及时解决。" />
+      <Button fx:id="exit" layoutX="1162.0" layoutY="13.0" mnemonicParsing="false" onAction="#exit" prefHeight="41.0" prefWidth="108.0" text="退出登录" />
+      <ImageView fitHeight="71.0" fitWidth="91.0" layoutX="6.0" layoutY="13.0" style="-fx-image: url(img/first.png);">
+         <image>
+
+         </image>
+      </ImageView>
+      <ImageView fitHeight="39.0" fitWidth="200.0" layoutX="91.0" layoutY="33.0" style="-fx-image: url(img/second.png);">
+         <image>
+
+         </image>
+      </ImageView>
+      <TextArea editable="false" layoutX="807.0" layoutY="134.0" prefHeight="128.0" prefWidth="219.0">
+         <effect>
+            <InnerShadow />
+         </effect></TextArea>
+      <TextArea editable="false" layoutX="807.0" layoutY="260.0" prefHeight="98.0" prefWidth="219.0" text="科目：历史&#10;班级：19级移动三班,四班&#10;时间：6月21日下午&#10;地点：14#201、14#203&#10;">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </TextArea>
+      <Button fx:id="HistoryButton" layoutX="861.0" layoutY="358.0" mnemonicParsing="false" onAction="#HistoryButton" prefHeight="41.0" prefWidth="132.0" text="点击进入" />
+      <TextArea layoutX="36.0" layoutY="429.0" prefHeight="128.0" prefWidth="219.0">
+         <effect>
+            <InnerShadow />
+         </effect></TextArea>
+      <TextArea layoutX="291.0" layoutY="429.0" prefHeight="128.0" prefWidth="219.0" />
+      <TextArea layoutX="551.0" layoutY="429.0" prefHeight="128.0" prefWidth="219.0" />
+      <Button fx:id="MusicButton" layoutX="80.0" layoutY="655.0" mnemonicParsing="false" onAction="#MusicButton" prefHeight="41.0" prefWidth="132.0" text="点击进入">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="ComputerButton" layoutX="335.0" layoutY="653.0" mnemonicParsing="false" onAction="#ComputerButton" prefHeight="41.0" prefWidth="132.0" text="点击进入">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="PolityButton" layoutX="595.0" layoutY="653.0" mnemonicParsing="false" onAction="#PolityButton" prefHeight="41.0" prefWidth="132.0" text="点击进入">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <TextArea editable="false" layoutX="36.0" layoutY="557.0" prefHeight="98.0" prefWidth="219.0" text="科目：音乐鉴赏&#10;班级：19级移动三班、四班&#10;时间：6月21日上午&#10;地点：14#201、14#203&#10;">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect></TextArea>
+      <TextArea editable="false" layoutX="290.0" layoutY="555.0" prefHeight="98.0" prefWidth="219.0" text="科目：计算机基础&#10;班级：19级移动三班、四班&#10;时间：6月22日上午&#10;地点：14#201、14#203&#10;">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect></TextArea>
+      <TextArea editable="false" layoutX="550.0" layoutY="555.0" prefHeight="98.0" prefWidth="219.0" text="科目：思想政治&#10;班级：19级移动三班、四班&#10;时间：6月21日上午&#10;地点：14#201、14#203&#10;">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect></TextArea>
+      <ImageView fitHeight="128.0" fitWidth="219.0" layoutX="550.0" layoutY="428.0" style="-fx-image: url(img/polity.JPG);">
+         <image>
+
+         </image>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="128.0" fitWidth="219.0" layoutX="290.0" layoutY="429.0" style="-fx-image: url(img/computer.jpg);">
+         <image>
+
+         </image>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="128.0" fitWidth="219.0" layoutX="36.0" layoutY="429.0" style="-fx-image: url(img/music.JPG);">
+         <image>
+
+         </image>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="128.0" fitWidth="219.0" layoutX="807.0" layoutY="134.0" style="-fx-image: url(img/history.jpg);">
+         <image>
+
+         </image>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </ImageView>
+      <TextField fx:id="Name" editable="false" layoutX="1061.0" layoutY="14.0" prefHeight="39.0" prefWidth="91.0" />
+      <Label layoutX="970.0" layoutY="20.0" text="学生姓名">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.22815533980582525" endY="1.0" startX="0.23300970873786409" startY="0.7184466019417476">
+               <stops>
+                  <Stop color="#ab2525" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+   </children>
+</AnchorPane>

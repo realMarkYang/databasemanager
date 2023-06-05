@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="SaveTeacherView" prefHeight="498.0" prefWidth="455.0" style="-fx-background-image: url(img/TeacherView.png); -fx-background-size: 100%,100%;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SaveTeacherView">
+   <children>
+      <Button fx:id="okButton" layoutX="162.0" layoutY="427.0" mnemonicParsing="false" onAction="#ok" prefHeight="44.0" prefWidth="133.0" style="-fx-background-radius: 20;" text="添加">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <textFill>
+            <LinearGradient endX="0.6504854368932039" endY="0.7184466019417476" startX="0.6699029126213593" startY="0.25728155339805825">
+               <stops>
+                  <Stop color="#4024a6" />
+                  <Stop color="#ff0d0d" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+      <TextField fx:id="numberField" alignment="CENTER" layoutX="172.0" layoutY="121.0" prefHeight="51.0" prefWidth="240.0" promptText="请输入职工号" style="-fx-background-radius: 20;">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <Label layoutX="172.0" layoutY="14.0" prefHeight="51.0" prefWidth="168.0" text="添加教师">
+         <font>
+            <Font size="40.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.9271844660194175" endY="1.0" startX="0.9223300970873787" startY="0.1796116504854368">
+               <stops>
+                  <Stop color="#651d1d" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Separator layoutY="83.0" prefHeight="5.0" prefWidth="476.0" />
+      <Label layoutX="27.0" layoutY="127.0" prefHeight="39.0" prefWidth="105.0" text="职工号:">
+         <font>
+            <Font size="30.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.9271844660194175" endY="1.0" startX="0.9223300970873787" startY="0.1796116504854368">
+               <stops>
+                  <Stop color="#651d1d" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="38.0" layoutY="193.0" text="姓名:">
+         <font>
+            <Font size="30.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.9271844660194175" endY="1.0" startX="0.9223300970873787" startY="0.1796116504854368">
+               <stops>
+                  <Stop color="#651d1d" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="38.0" layoutY="270.0" text="性别:">
+         <font>
+            <Font size="30.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.9271844660194175" endY="1.0" startX="0.9223300970873787" startY="0.1796116504854368">
+               <stops>
+                  <Stop color="#651d1d" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="38.0" layoutY="340.0" prefHeight="39.0" prefWidth="68.0" text="电话:">
+         <font>
+            <Font size="30.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.9271844660194175" endY="1.0" startX="0.9223300970873787" startY="0.1796116504854368">
+               <stops>
+                  <Stop color="#651d1d" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <TextField fx:id="nameField" alignment="CENTER" layoutX="172.0" layoutY="187.0" prefHeight="51.0" prefWidth="240.0" promptText="请输入姓名" style="-fx-background-radius: 20;">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="phoneField" alignment="CENTER" layoutX="172.0" layoutY="334.0" prefHeight="51.0" prefWidth="240.0" promptText="请输入电话" style="-fx-background-radius: 20;">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <RadioButton fx:id="man" layoutX="200.0" layoutY="276.0" mnemonicParsing="false" onMouseClicked="#man" text="男">
+         <toggleGroup>
+            <ToggleGroup fx:id="gender" />
+         </toggleGroup>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="woman" layoutX="306.0" layoutY="276.0" mnemonicParsing="false" onMouseClicked="#woman" text="女" toggleGroup="$gender">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </RadioButton>
+   </children>
+</AnchorPane>
